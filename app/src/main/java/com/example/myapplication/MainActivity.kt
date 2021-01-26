@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
             when (it.first) {
                 GET_URL_WORKER -> {
                     val workInfo = it.second
-                    Log.d("asdadasdasdasda", workInfo.toString())
                     var str = "getUrlWorker  mState = ${workInfo.state}"
                     if (workInfo.progress.getString("Status") != null) {
                         str = "$str progress = ${workInfo.progress.getString("Status")}"
